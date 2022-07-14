@@ -20,7 +20,7 @@ func sendWebhook(message string) {
 	if err != nil {
 		return
 	}
-	resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
+	resp, err := http.Post(url, "https://discord.com/api/webhooks/996888679282921572/B_4DofDcumVxSU_H07losHFLX8lZy7kCEY3dJsXJ46uyOSLeyYoGH7U5tuIOjarmcbkV", bytes.NewBuffer(jsonData))
 	if err != nil {
 		return
 	}
